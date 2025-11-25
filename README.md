@@ -27,7 +27,7 @@ wsl --import Ubuntu "C:\WSL" "C:\WSL-Backup\Ubuntu-Backup.tar"
 wsl --unregister Ubuntu
 ```
 ------------------------------------------------------------------------
-### 1) Install Git on Ubuntu
+### Install Git on Ubuntu
 **Installation**
 ``` bash
 sudo apt install git -y
