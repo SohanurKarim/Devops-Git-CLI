@@ -163,6 +163,7 @@ git push -u origin main
 ``` bash
 git remote -v
 ```
+------------------------------------------------------------------------
 ### Merge one Branch into another
 ``` bash
 git checkout feature/my-change-01
@@ -194,6 +195,13 @@ git branch -D feature/my-change-01
 git push origin --delete feature/my-change-01
 ```
 ------------------------------------------------------------------------
+### Restore file from main | If you want the file back:
+``` bash
+git checkout origin/main -- file.txt
+git add file.txt
+git commit
+```
+
 ---
 
 ## 🧑‍💻 Author
