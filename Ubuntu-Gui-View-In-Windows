@@ -11,3 +11,11 @@ WSL install in windos systme and ubunto os show GUI mode (install steps) without
 1. git config --global user.name "GitHub user same name"
 2. git config --global user.email "Github login Email"
 3. git config --global -list
+
+*********** When user rm -rm README.md - file delete ************
+git pull --rebase origin MyContribution
+git checkout MyContribution
+git checkout main -- README.md
+git add README.md
+git commit -m "Restore README.md from main"
+git push origin MyContribution
