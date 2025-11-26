@@ -1,5 +1,5 @@
-WSL install in windos systme and ubunto os show GUI mode (install step)
-************************************************************************
+WSL install in windos systme and ubunto os show GUI mode (install steps) without virtual box install
+****************************************************************************************************
 1. sudo apt update
 2. sudo apt install tasksel
 3. sudo tasksel 
