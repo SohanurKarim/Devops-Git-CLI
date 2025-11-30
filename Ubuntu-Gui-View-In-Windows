@@ -11,3 +11,92 @@ WSL install in windos systme and ubunto os show GUI mode (install steps) without
 1. git config --global user.name "GitHub user same name"
 2. git config --global user.email "Github login Email"
 3. git config --global -list
+
+*************Git CLI***********************
+1. git init                             ---git initialize 
+2. git status                           ---every time check file position or status
+3. git add * / git add .               --- This command use for every change when
+4. git commit -m "commit here"          --- When file edit then every time commit 
+-------Git locally change-----
+1. git log --oneline                    ---check how many commit here
+2. git reset --soft HEAD~1              ---No change code only commit delete one by one, like a queue
+3. git reset --hard HEAD~1              ---commit delete with code that means back to previous version and use to top head delete
+4.  git reset --hard <commit_id_here>    ---specific code commit delete with code that means back to the previous version and jump
+5. git checkout <commit_id_here>        --- move to specific commit temporarily
+
+1️⃣ git init
+Flag	      Meaning	                                       Example
+--bare	   Create a repository without working directory	git init --bare myrepo.git
+--shared	   Make repo accessible to a group	               git init --shared
+2️⃣ git add
+Flag	        Meaning	Example
+-A / --all	Add all changes (new, modified, deleted)	git add -A
+.	Add current directory	git add .
+-u	Add modified & deleted files, skip new files	git add -u
+-p	Interactively choose chunks	git add -p file.txt
+3️⃣ git commit
+Flag	Meaning	Example
+-m "msg"	Commit with message inline	git commit -m "Initial commit"
+-a	Stage tracked files before commit	git commit -a -m "Update tracked files"
+--amend	Amend last commit	git commit --amend -m "Corrected message"
+--allow-empty	Commit even if no changes	git commit --allow-empty -m "Empty commit"
+-v	Show diff in editor	git commit -v
+4️⃣ git status
+Flag	Meaning	Example
+-s / --short	Short format	git status -s
+-b	Show branch info	git status -b
+--ignored	Show ignored files	git status --ignored
+5️⃣ git log
+Flag	Meaning	Example
+--oneline	One line per commit	git log --oneline
+--graph	ASCII graph of history	git log --graph
+--decorate	Show branch/tag names	git log --decorate
+--all	Show all branches	git log --all
+-p	Show diff for each commit	git log -p
+--since="2 days ago"	Filter by date	git log --since="2025-11-01"
+--stat	Show summary of changed files	git log --stat
+6️⃣ git branch
+Flag	Meaning	Example
+-a	Show all branches (local + remote)	git branch -a
+-r	Show only remote branches	git branch -r
+-d	Delete branch	git branch -d feature/ui
+-D	Force delete branch	git branch -D feature/ui
+-m	Rename branch	git branch -m old new
+7️⃣ git checkout / git switch
+Flag	Meaning	Example
+-b <branch>	Create and switch to new branch	git checkout -b feature/api
+--detach	Switch to commit, detached HEAD	git checkout --detach 8c68315
+-	Switch to previous branch	git checkout -
+--track <remote/branch>	Track remote branch	git checkout -b feature/ui origin/feature/ui
+Modern: git switch	New way to switch branches	git switch dev
+-c	Create & switch (switch alternative)	git switch -c feature/api
+8️⃣ git push
+Flag	Meaning	Example
+-u / --set-upstream	Set upstream tracking	git push -u origin feature/ui
+-f / --force	Force push	git push -f origin main
+--all	Push all branches	git push --all origin
+--tags	Push all tags	git push --tags
+--dry-run	Preview push	git push --dry-run origin main
+9️⃣ git pull
+Flag	Meaning	Example
+--rebase	Rebase local commits	git pull --rebase origin main
+--ff-only	Only fast-forward, fail otherwise	git pull --ff-only origin main
+--all	Fetch all remotes	git pull --all
+🔟 git reset
+Flag	Meaning	Example
+--soft	Reset commit history, keep changes staged	git reset --soft HEAD~1
+--mixed	Reset history & staging, keep working dir	git reset --mixed HEAD~1
+--hard	Reset everything	git reset --hard HEAD~1
+HEAD~1	Refers to one commit before HEAD	git reset --hard HEAD~1
+1️⃣1️⃣ git fetch
+Flag	Meaning	Example
+--all	Fetch all remotes	git fetch --all
+--prune	Remove deleted remote branches locally	git fetch --prune
+<remote>	Fetch from specific remote	git fetch origin
+1️⃣2️⃣ git diff
+Flag	Meaning	Example
+--staged / --cached	Show staged changes	git diff --staged
+--color-words	Show word-level diff	git diff --color-words
+<file>	Show diff of a file	git diff file.txt
+HEAD~1	Compare with previous commit	git diff HEAD~1
+
