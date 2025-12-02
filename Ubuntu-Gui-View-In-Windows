@@ -29,7 +29,7 @@ WSL install in windos systme and ubunto os show GUI mode (install steps) without
 --bare	      Create a repository without working directory	git init --bare myrepo.git
 --shared	      Make repo accessible to a group	               git init --shared
 2️⃣ git add
-Flag	          Meaning	                                      Example
+Flag	          Meaning	                                       Examples
 -A / --all	    Add all changes (new, modified, deleted)	      git add -A
 .	             Add current directory	                        git add .
 -u            	 Add modified & deleted files, skip new files	git add -u
