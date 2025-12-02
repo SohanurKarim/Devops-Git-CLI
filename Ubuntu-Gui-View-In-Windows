@@ -25,22 +25,22 @@ WSL install in windos systme and ubunto os show GUI mode (install steps) without
 5. git checkout <commit_id_here>        --- move to specific commit temporarily
 
 1️⃣ git init
-Flag	      Meaning	                                       Example
---bare	   Create a repository without working directory	git init --bare myrepo.git
---shared	   Make repo accessible to a group	               git init --shared
+  Flag	      Meaning	                                       Example
+--bare	      Create a repository without working directory	git init --bare myrepo.git
+--shared	      Make repo accessible to a group	               git init --shared
 2️⃣ git add
-Flag	        Meaning	Example
--A / --all	Add all changes (new, modified, deleted)	git add -A
-.	Add current directory	git add .
--u	Add modified & deleted files, skip new files	git add -u
--p	Interactively choose chunks	git add -p file.txt
+Flag	          Meaning	                                      Example
+-A / --all	    Add all changes (new, modified, deleted)	      git add -A
+.	             Add current directory	                        git add .
+-u            	 Add modified & deleted files, skip new files	git add -u
+-p	             Interactively choose chunks	                  git add -p file.txt
 3️⃣ git commit
-Flag	Meaning	Example
--m "msg"	Commit with message inline	git commit -m "Initial commit"
--a	Stage tracked files before commit	git commit -a -m "Update tracked files"
---amend	Amend last commit	git commit --amend -m "Corrected message"
---allow-empty	Commit even if no changes	git commit --allow-empty -m "Empty commit"
--v	Show diff in editor	git commit -v
+Flag	            Meaning	                                 Example
+-m "msg"	         Commit with message inline	               git commit -m "Initial commit"
+-a	               Stage tracked files before commit	      git commit -a -m "Update tracked files"
+--amend	         Amend last commit	git commit             --amend -m "Corrected message"
+--allow-empty	   Commit even if no changes	               git commit --allow-empty -m "Empty commit"
+-v	               Show diff in editor	                     git commit -v
 4️⃣ git status
 Flag	Meaning	Example
 -s / --short	Short format	git status -s
