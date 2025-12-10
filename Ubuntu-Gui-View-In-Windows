@@ -6,6 +6,7 @@ WSL install in windos systme and ubunto os show GUI mode (install steps) without
    -> new window open then select ->KDE Plasma (space key use to select and up down arrow to move, Tab key use to ok) its install time may be 15/30 then
 4. ip a (here you show ip address but you choose second 2 no ip like its start 172.... )
 5. windows search panel -> then search Remote Desktop Connection -> then pase ip address -> use ubuntu user name and password)
+6. After install KDE Plasma then > CMD > wsl > ip a > remote desktop (2nd ip insert)> userID: sohanur>p:8
 
 *****************Git Cli login Command********************
 1. git config --global user.name "GitHub user same name"
